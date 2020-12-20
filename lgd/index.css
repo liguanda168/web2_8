@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    width: 700px;
+    height: 400px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.box {
+    width: 1200px;
+    height: 350px;
+    transform-style: perserve-3d;
+    margin: 100px auto;
+    position: relative;
+} 
+
+
+.box img {
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    transition: all .3s linear;
+    border: solid 5px white;
+}
+
+.box:hover .btn {
+    opacity: 1;
+}
+
+.front {
+    left: -100px;
+}
+
+.back {
+    left: 600px;
+}
+
+
+.active {
+    left: 250px;
+    transform: scale(1.5);
+    z-index: 10;
+    border: solid 5px white;
+    opacity: 1;
+} 
+
+.btns .btn {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 50px;
+    font-family: "微软雅黑";
+    color: rgba(255, 255, 255, .5);
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity .3s linear;
+} 
+
+ .btns .btn:first-child {
+    top: 200px;
+}
+
+.btns .btn:last-child {
+    top: 200px;
+    right: 0px;
+} 
